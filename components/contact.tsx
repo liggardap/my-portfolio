@@ -4,9 +4,9 @@ import { IconMail, IconBrandLinkedin, IconBrandGithub } from "@tabler/icons-reac
 
 export function Contact() {
   return (
-    <section id="contact" className="py-24 bg-muted/30">
+    <section id="contact" className="py-16 md:py-24 bg-muted/30">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-2">Get in Touch</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-2">Get in Touch</h2>
         <Separator className="mb-10" />
 
         <div className="max-w-lg">

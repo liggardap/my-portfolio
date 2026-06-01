@@ -3,9 +3,9 @@ import { IconBuildingFactory2, IconSchool, IconWorld } from "@tabler/icons-react
 
 export function About() {
   return (
-    <section id="about" className="py-24">
+    <section id="about" className="py-16 md:py-24">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-2">About</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-2">About</h2>
         <Separator className="mb-10" />
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -30,7 +30,7 @@ export function About() {
               <div className="mt-0.5 text-muted-foreground"><IconBuildingFactory2 size={20} /></div>
               <div>
                 <p className="font-medium">PT Itsavirus Bali Development</p>
-                <p className="text-sm text-muted-foreground">Medior Software Engineer (IC2) · Apr 2025–Present</p>
+                <p className="text-sm text-muted-foreground">Medior Software Engineer (IC2) · Apr 2025–May 2026</p>
               </div>
             </div>
             <div className="flex gap-4">

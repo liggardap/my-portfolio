@@ -30,9 +30,9 @@ const skillGroups = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-24">
+    <section id="skills" className="py-16 md:py-24">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-2">Skills</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-2">Skills</h2>
         <Separator className="mb-10" />
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">

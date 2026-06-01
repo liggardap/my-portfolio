@@ -5,18 +5,18 @@ import { IconBrandGithub, IconBrandLinkedin, IconMail, IconMapPin } from "@table
 export function Hero() {
   return (
     <section className="min-h-screen flex items-center pt-16">
-      <div className="max-w-5xl mx-auto px-6 py-24">
+      <div className="max-w-5xl mx-auto px-6 py-16 md:py-24">
         <div className="max-w-2xl">
-          <Badge variant="secondary" className="mb-6 gap-1.5">
+          <Badge variant="secondary" className="mb-5 gap-1.5 text-xs">
             <IconMapPin size={12} />
             Denpasar, Bali — Remote · Relocation Negotiable
           </Badge>
 
-          <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4">
             Liggar Prayoga
           </h1>
 
-          <p className="text-xl text-muted-foreground mb-2">
+          <p className="text-lg sm:text-xl text-muted-foreground mb-2">
             Backend-first. Full-stack in practice.
           </p>
 

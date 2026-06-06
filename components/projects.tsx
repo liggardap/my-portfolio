@@ -61,7 +61,7 @@ const professional = projects.filter((p) => p.type === "Professional");
 
 function ProjectCard({ p }: { p: (typeof projects)[0] }) {
   const card = (
-    <Card className={`flex flex-col hover:shadow-md transition-shadow${p.url ? " cursor-pointer hover:ring-1 hover:ring-primary/30" : ""}`}>
+    <Card className={`flex flex-col h-full hover:shadow-md transition-shadow${p.url ? " cursor-pointer hover:ring-1 hover:ring-primary/30" : ""}`}>
       <CardHeader>
         <CardTitle className="text-lg leading-snug">{p.title}</CardTitle>
         <CardDescription className="text-xs">

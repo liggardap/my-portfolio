@@ -84,7 +84,7 @@ function ProjectCard({ p }: { p: (typeof projects)[0] }) {
 
   if (p.url) {
     return (
-      <a href={p.url} target="_blank" rel="noopener noreferrer" className="contents">
+      <a href={p.url} target="_blank" rel="noopener noreferrer" className="flex flex-col">
         {card}
       </a>
     );

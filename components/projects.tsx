@@ -22,6 +22,7 @@ const projects = [
     tags: ["Laravel 13", "MySQL", "JWT", "RBAC", "Vue 3", "TypeScript", "Pinia", "shadcn-vue", "Tailwind CSS 4"],
     highlight: "RFC-compliant API · Full-stack · 4 languages",
     type: "Personal",
+    url: "https://stak.liggar.site/",
   },
   {
     title: "Job Board Platform",
@@ -59,8 +60,8 @@ const personal = projects.filter((p) => p.type === "Personal");
 const professional = projects.filter((p) => p.type === "Professional");
 
 function ProjectCard({ p }: { p: (typeof projects)[0] }) {
-  return (
-    <Card className="flex flex-col hover:shadow-md transition-shadow">
+  const card = (
+    <Card className={`flex flex-col hover:shadow-md transition-shadow${p.url ? " cursor-pointer hover:ring-1 hover:ring-primary/30" : ""}`}>
       <CardHeader>
         <CardTitle className="text-lg leading-snug">{p.title}</CardTitle>
         <CardDescription className="text-xs">
@@ -80,6 +81,16 @@ function ProjectCard({ p }: { p: (typeof projects)[0] }) {
       </CardContent>
     </Card>
   );
+
+  if (p.url) {
+    return (
+      <a href={p.url} target="_blank" rel="noopener noreferrer" className="contents">
+        {card}
+      </a>
+    );
+  }
+
+  return card;
 }
 
 export function Projects() {
